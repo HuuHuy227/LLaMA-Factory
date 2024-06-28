@@ -1,0 +1,14 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
+adapter_name_or_path: /home/demo/adapter-v2, /home/demo/adapter-v3
+template: llama3
+finetuning_type: lora
+
+### export
+export_dir: models/llama3_lora_sft
+export_size: 5
+export_device: cpu
+export_legacy_format: false
+export_hub_model_id: "Huy227/llama3_instruct_v5"
