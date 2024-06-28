@@ -1,7 +1,7 @@
 ### model
 model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
-quantization_bit: 8
-quantization_method: bitsandbytes  # choices: [bitsandbytes (4/8), hqq (2/3/4/5/6/8), eetq (8)]
+quantization_bit: 6
+quantization_method: hqq  # choices: [bitsandbytes (4/8), hqq (2/3/4/5/6/8), eetq (8)]
 
 ### method
 stage: dpo
@@ -14,7 +14,7 @@ pref_loss: sigmoid  # choices: [sigmoid (dpo), orpo, simpo]
 ### dataset
 dataset: dpo_vi
 template: llama3
-cutoff_len: 1024
+cutoff_len: 2048
 max_samples: 1000
 overwrite_cache: true
 preprocessing_num_workers: 16
