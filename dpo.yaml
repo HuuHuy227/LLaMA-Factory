@@ -1,7 +1,7 @@
 ### model
 model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
-quantization_bit: 6
-quantization_method: hqq  # choices: [bitsandbytes (4/8), hqq (2/3/4/5/6/8), eetq (8)]
+quantization_bit: 8
+quantization_method: bitsandbytes  # choices: [bitsandbytes (4/8), hqq (2/3/4/5/6/8), eetq (8)]
 
 ### method
 stage: dpo
@@ -28,7 +28,7 @@ overwrite_output_dir: true
 
 ### train
 per_device_train_batch_size: 2
-gradient_accumulation_steps: 4
+gradient_accumulation_steps: 2
 learning_rate: 5.0e-6
 num_train_epochs: 3.0
 lr_scheduler_type: cosine
