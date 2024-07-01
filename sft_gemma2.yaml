@@ -8,6 +8,8 @@ stage: sft
 do_train: true
 finetuning_type: lora
 lora_target: all
+lora_rank: 4
+lora_alpha: 8
 
 ### dataset
 dataset: identity,sft_final_data,chat_sharegpt 
