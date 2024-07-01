@@ -1,13 +1,13 @@
 ### model
 model_name_or_path: google/gemma-2-9b-it
-quantization_bit: 4
+quantization_bit: 8
 quantization_method: bitsandbytes  # choices: [bitsandbytes (4/8), hqq (2/3/4/5/6/8), eetq (8)]
 
 ### method
 stage: sft
 do_train: true
 finetuning_type: lora
-lora_target: all
+lora_target: q_proj,k_proj,v_proj,o_proj #all
 
 ### dataset
 dataset: identity,sft_final_data,chat_sharegpt 
@@ -30,7 +30,7 @@ gradient_accumulation_steps: 4
 learning_rate: 2.0e-4
 num_train_epochs: 3.0
 lr_scheduler_type: cosine
-warmup_ratio: 0.05
+warmup_ratio: 0.1
 fp16: true
 ddp_timeout: 180000000
 
