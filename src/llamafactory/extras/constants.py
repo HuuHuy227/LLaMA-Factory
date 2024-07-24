@@ -738,6 +738,30 @@ register_model_group(
     template="llama3",
 )
 
+register_model_group(
+    models={
+        "LLaMA3.1-8B": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-8B",
+        },
+        "LLaMA3.1-70B": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-70B",
+        },
+        "LLaMA3.1-405B": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-405B",
+        },
+        "LLaMA3.1-8B-Chat": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        },
+        "LLaMA3.1-70B-Chat": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+        },
+        "LLaMA3.1-405B-Chat": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-405B-Instruct",
+        }
+    },
+    template="llama3.1",
+)
+
 
 register_model_group(
     models={
