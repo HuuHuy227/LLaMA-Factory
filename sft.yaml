@@ -1,6 +1,6 @@
 ### model
 model_name_or_path: meta-llama/Meta-Llama-3.1-8B-Instruct
-quantization_bit: 4
+quantization_bit: 8
 quantization_method: bitsandbytes  # choices: [bitsandbytes (4/8), hqq (2/3/4/5/6/8), eetq (8)]
 
 ### method
@@ -26,7 +26,7 @@ overwrite_output_dir: true
 
 ### train
 per_device_train_batch_size: 2
-gradient_accumulation_steps: 2
+gradient_accumulation_steps: 4
 learning_rate: 1.0e-4
 num_train_epochs: 3.0
 lr_scheduler_type: cosine
@@ -36,6 +36,6 @@ ddp_timeout: 180000000
 
 ### eval
 val_size: 0.01
-per_device_eval_batch_size: 1
+per_device_eval_batch_size: 2
 eval_strategy: steps
 eval_steps: 500
