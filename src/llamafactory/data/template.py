@@ -733,7 +733,7 @@ _register_template(
         ]
     ),
     format_prefix=EmptyFormatter(slots=[{"bos_token"}]),
-    stop_words=["<|eot_id|>"],
+    stop_words=["<|eot_id|>","<|eom_id|>"],
     replace_eos=True,
 )
 

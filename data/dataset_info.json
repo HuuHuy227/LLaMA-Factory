@@ -9,6 +9,14 @@
       "rejected": "rejected"
     }
   }, 
+  "sft_final_data_v2": {
+    "hf_hub_url": "Huy227/instruct_ds_v2",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
   "sft_final_data": {
     "hf_hub_url": "Huy227/new_instruct_ds",
     "columns": {
@@ -31,6 +39,13 @@
       "prompt": "instruction",
       "query": "input",
       "response": "output"
+    }
+  },
+  "chat_sharegpt_v2": {
+    "hf_hub_url": "Huy227/sharegpt_instructV2",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
     }
   },
   "chat_sharegpt": {
