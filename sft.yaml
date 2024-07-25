@@ -10,7 +10,7 @@ finetuning_type: lora
 lora_target: all
 
 ### dataset
-dataset: identity,sft_final_data,chat_sharegpt #sft_final_data_v2,chat_sharegpt_v2, chat_sharegpt
+dataset: identity,sft_final_data_v2,chat_sharegpt_v2, chat_sharegpt #sft_final_data,chat_sharegpt #
 template: llama3
 cutoff_len: 1024
 max_samples: 1000
