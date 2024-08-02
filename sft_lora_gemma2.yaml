@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: google/gemma-2-2b
+model_name_or_path: google/gemma-2-2b-it
 
 ### method
 stage: sft
