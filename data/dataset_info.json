@@ -1,4 +1,60 @@
 {
+  "dpo_vi": {
+    "hf_hub_url": "Huy227/vi_dpo",
+    "ranking": true,
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  }, 
+  "sft_final_data_v2": {
+    "hf_hub_url": "Huy227/instruct_ds_v2",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "sft_final_data": {
+    "hf_hub_url": "Huy227/new_instruct_ds",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "sft_data": {
+    "hf_hub_url": "Huy227/final_instruct_ds",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "alpaca_instruct": {
+    "hf_hub_url": "Huy227/alpaca_instruct",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "chat_sharegpt_v2": {
+    "hf_hub_url": "Huy227/sharegpt_instructV2",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "chat_sharegpt": {
+    "hf_hub_url": "Huy227/sharegpt_instruct",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
   "identity": {
     "file_name": "identity.json"
   },
