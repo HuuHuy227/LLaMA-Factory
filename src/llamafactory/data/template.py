@@ -828,7 +828,7 @@ _register_template(
     format_system=StringFormatter(slots=["<|im_start|>system\n{{content}}<|im_end|>\n"]),
     format_observation=StringFormatter(slots=["<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
     format_separator=EmptyFormatter(slots=["\n"]),
-    default_system="You are a helpful assistant.",
+    default_system="Bạn là một trợ lí AI Tiếng Việt hữu ích.",
     stop_words=["<|im_end|>"],
     replace_eos=True,
 )
