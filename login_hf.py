@@ -1,2 +1,2 @@
 from huggingface_hub import login
-login("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")
+login("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")
